@@ -1,0 +1,243 @@
+
+
+/*cor font rgb(62, 59, 59);*/
+/* degrade #ff3060,#ff011a) */
+
+
+*{
+    margin:0;padding: 0;box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.logo img {
+    width: 70px;
+    padding: 15px 0;
+}
+.menu{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul, a{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(62, 59, 59);
+    font-family: sans-serif;
+    font-size: 1.05rem;
+}
+nav ul a:hover{
+    text-decoration: underline 4px solid #ff011a;
+    
+}
+.menu #encomenda{
+    padding: 8px 19px;
+    border-radius: 20px;
+    border: 2px solid #ff011a;
+    color: #ff011a;
+    background-color: #fff;
+    transition: .2s ease-in-out;
+    box-shadow: 2px 3px 5px .5px rgba(120, 120, 120, 0.381);
+
+}
+.menu #encomenda:hover {
+    color: #fff;
+    background-image: linear-gradient(47deg,#ff011a, #ff3060 40%);
+    cursor: pointer;
+}
+
+
+
+
+/*menutop*/
+.cont-header{
+    display: flex; 
+
+    justify-content: space-between;
+    align-items: start; 
+
+    width: 80%;
+    margin: 0 auto;
+ 
+}
+
+.Decherry-header-text{
+    width: 50%;
+}
+.Decherry-header-text h1{
+    color: rgb(62, 59, 59);
+
+    font-size: 4.2rem;
+    font-weight: normal;
+
+    margin-top:75px;
+    
+}
+.Decherry-header-text p{
+    font-size: 1.1rem;
+
+    line-height: 32px;
+    
+    margin: 50px 0;
+}
+.cont-header .modelo-header{
+    width: 36%;
+}
+.cont-header img{
+    width: 100%;
+}
+
+
+
+.cont-header #encomenda-2 {
+    padding: 12px 16px;
+    border-radius: 25px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #ff3060, #ff011a);
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgba(137, 137, 137, 0.344);
+    margin: 25px 0;
+    transition: .3s ease-in-out;
+    
+}
+.cont-header #encomenda-2:hover {
+    background-image: linear-gradient(47deg,#ff011a, #ff3060);
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+
+
+.stastic-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.stastic{
+    background-image: linear-gradient(45deg, #ff3060, #ff011a 70%);
+    
+    display: flex;
+    justify-content: space-between;
+
+    padding: 60px;
+    margin-top: -10rem;
+    border-radius: 18px;
+
+    z-index: 999;
+    position: relative;
+
+    text-align: center;
+}
+.stastic h1{
+    color: rgb(213, 181, 181);
+    font-size: 28px;
+}
+.stastic h2{
+    color: #fff ;
+    font-size: 22px;
+}
+@media (max-width:1500px){
+    .Decherry-header-text h1{
+        font-size: 3.6rem ;
+    }
+    .Decherry-header-text p{
+        margin: 25px 0;
+        font-size: 1.08rem;
+    }
+    
+    .stastic{
+        margin-top: -6rem;
+    }
+}
+
+@media (max-width:1400px){
+    .Decherry-header-text h1{
+       font-size: 3.4rem;
+    }
+    .Decherry-header-text {
+        font-size: 1rem;
+    }
+    .stastic{
+        margin-top: -3rem;
+    }
+    .stastic h1{
+        font-size: 24px;
+    }
+    .stastic h2{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:1150px){
+    .cont-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Decherry-header-text{
+        width: 100%;
+        text-align: center;
+    }
+    .cont-header .modelo-header{
+        width: 50%;
+    }
+    .stastic h1{
+        font-size: 22px ;
+    }
+    .stastic h2{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:768px){
+    nav{
+        display: none;
+    }
+    .cont-header h1{
+        margin-top: 25px;
+        font-size: 2.5rem;
+    }
+    .cont-header .modelo-header{
+        width: 100%;
+    }
+    .stastic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+    }
+    .stastic h1{
+        font-size: 1.8rem;
+    }
+    .stastic h2{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* orcamento form */
+
+
+.orcamento-cont{
+    width: 600px;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    
+}
+.orcamento-cont input{
+    width: 100%; 
+    padding: 8px 0;
+}
